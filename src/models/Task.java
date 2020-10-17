@@ -10,8 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "messages")
-public class Message {
+@Table(name = "tasks")
+public class Task {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -57,7 +57,6 @@ public class Message {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
-
 
 
 
